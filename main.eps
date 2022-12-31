@@ -1,0 +1,1060 @@
+/*================Start Import================*/
+import TriggerEditor.TETools as fc;
+/*================End Import================*/
+/*================Start Var================*/
+const SCVp = PVariable();
+/*================End Var================*/
+function ClassicTriggerExec(){
+    /*================Start Player 1================*/
+    if (playerexist(0))
+    {
+        setcurpl(0);
+        const cp = 0;
+        <? LuaPlayerVariable = 0?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                Command(CurrentPlayer, AtMost, 0, 7)
+            ){
+                <?SetNextUnitEpd("SCVp[cp]")?>;
+                CreateUnit(1, 7, 35, CurrentPlayer);
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 7) && 
+                fc.BuildCheckEPD(SCVp[cp], 103)
+            ){
+                fc.BuildResetEPD(SCVp[cp]);
+                CreateUnit(1, 64, 35, CurrentPlayer);
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "48", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "166", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "95", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "713", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "45", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "158", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "90", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "675", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "43", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "149", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "85", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+    }
+    /*================End Player 1================*/
+    /*================Start Player 2================*/
+    if (playerexist(1))
+    {
+        setcurpl(1);
+        const cp = 1;
+        <? LuaPlayerVariable = 1?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                Command(CurrentPlayer, AtMost, 0, 7)
+            ){
+                <?SetNextUnitEpd("SCVp[cp]")?>;
+                CreateUnit(1, 7, 36, CurrentPlayer);
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 7) && 
+                fc.BuildCheckEPD(SCVp[cp], 103)
+            ){
+                fc.BuildResetEPD(SCVp[cp]);
+                CreateUnit(1, 64, 36, CurrentPlayer);
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "48", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "166", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "95", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "713", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "45", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "158", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "90", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "675", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "43", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "149", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "85", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+    }
+    /*================End Player 2================*/
+    /*================Start Player 3================*/
+    if (playerexist(2))
+    {
+        setcurpl(2);
+        const cp = 2;
+        <? LuaPlayerVariable = 2?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                Command(CurrentPlayer, AtMost, 0, 7)
+            ){
+                <?SetNextUnitEpd("SCVp[cp]")?>;
+                CreateUnit(1, 7, 37, CurrentPlayer);
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 7) && 
+                fc.BuildCheckEPD(SCVp[cp], 103)
+            ){
+                fc.BuildResetEPD(SCVp[cp]);
+                CreateUnit(1, 64, 37, CurrentPlayer);
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "48", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "166", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "95", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "713", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "45", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "158", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "90", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "675", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "43", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "149", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "85", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+    }
+    /*================End Player 3================*/
+    /*================Start Player 4================*/
+    if (playerexist(3))
+    {
+        setcurpl(3);
+        const cp = 3;
+        <? LuaPlayerVariable = 3?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                Command(CurrentPlayer, AtMost, 0, 7)
+            ){
+                <?SetNextUnitEpd("SCVp[cp]")?>;
+                CreateUnit(1, 7, 38, CurrentPlayer);
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 7) && 
+                fc.BuildCheckEPD(SCVp[cp], 103)
+            ){
+                fc.BuildResetEPD(SCVp[cp]);
+                CreateUnit(1, 64, 38, CurrentPlayer);
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "48", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "166", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "95", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "713", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "45", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "158", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "90", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "675", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "43", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "149", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "85", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+    }
+    /*================End Player 4================*/
+    /*================Start Player 5================*/
+    if (playerexist(4))
+    {
+        setcurpl(4);
+        const cp = 4;
+        <? LuaPlayerVariable = 4?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                Command(CurrentPlayer, AtMost, 0, 7)
+            ){
+                <?SetNextUnitEpd("SCVp[cp]")?>;
+                CreateUnit(1, 7, 39, CurrentPlayer);
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 7) && 
+                fc.BuildCheckEPD(SCVp[cp], 103)
+            ){
+                fc.BuildResetEPD(SCVp[cp]);
+                CreateUnit(1, 64, 39, CurrentPlayer);
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "48", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "166", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "95", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "713", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "45", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "158", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "90", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "675", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "43", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "149", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "85", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+    }
+    /*================End Player 5================*/
+    /*================Start Player 6================*/
+    if (playerexist(5))
+    {
+        setcurpl(5);
+        const cp = 5;
+        <? LuaPlayerVariable = 5?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                Command(CurrentPlayer, AtMost, 0, 7)
+            ){
+                <?SetNextUnitEpd("SCVp[cp]")?>;
+                CreateUnit(1, 7, 40, CurrentPlayer);
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 7) && 
+                fc.BuildCheckEPD(SCVp[cp], 103)
+            ){
+                fc.BuildResetEPD(SCVp[cp]);
+                CreateUnit(1, 64, 40, CurrentPlayer);
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+            }
+        }
+        {
+
+            if (
+                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "48", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "166", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "356", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "95", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "713", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "713", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "45", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "158", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "338", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "90", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "675", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "675", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "43", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "149", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "319", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "85", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+    }
+    /*================End Player 6================*/
+    /*================Start Player 7================*/
+    if (playerexist(6))
+    {
+        setcurpl(6);
+        const cp = 6;
+        <? LuaPlayerVariable = 6?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+        {
+
+            if (
+                ElapsedTime(AtLeast, 300)
+            ){
+                SetDeaths(CurrentPlayer, Add, 1, 57);
+                SetDeaths(CurrentPlayer, Add, 1, 59);
+            }
+        }
+        {
+
+            if (
+                Deaths(CurrentPlayer, AtLeast, 200, 57)
+            ){
+                SetDeaths(CurrentPlayer, Subtract, 200, 57);
+                <?SetUnitsDat("Hit_Points", 68, "2048", Add)?>;
+                <?SetUnitsDat("Hit_Points", 66, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 65, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 61, "512", Add)?>;
+                <?SetUnitsDat("Hit_Points", 50, "256", Add)?>;
+                <?SetUnitsDat("Hit_Points", 41, "512", Add)?>;
+                <?SetUnitsDat("Hit_Points", 39, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 38, "512", Add)?>;
+                <?SetUnitsDat("Hit_Points", 37, "128", Add)?>;
+            }
+        }
+        {
+
+            if (
+                Deaths(CurrentPlayer, AtLeast, 9000, 59)
+            ){
+                <?SetUpgrade(10, CurrentPlayer, Add, "1")?>;
+                <?SetUpgrade(3, CurrentPlayer, Add, "1")?>;
+                SetDeaths(CurrentPlayer, Subtract, 6000, 59);
+            }
+        }
+    }
+    /*================End Player 7================*/
+    /*================Start Player 8================*/
+    if (playerexist(7))
+    {
+        setcurpl(7);
+        const cp = 7;
+        <? LuaPlayerVariable = 7?>
+        {
+
+            if (
+                Always()
+            ){
+                <?EUDTurbo()?>;
+            }
+        }
+    }
+    /*================End Player 8================*/
+}
