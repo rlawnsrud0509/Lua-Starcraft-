@@ -43,27 +43,247 @@ function ClassicTriggerExec(){
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
@@ -73,7 +293,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "5", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -84,7 +316,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "6", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -95,7 +339,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "7", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -106,7 +362,65 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -165,6 +479,283 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
                 <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
                 DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "40", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "140", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "80", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "600", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtMost, 0, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "0", SetTo)?>;
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "4000", SetTo)?>;
             }
         }
     }
@@ -207,27 +798,247 @@ function ClassicTriggerExec(){
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
@@ -237,7 +1048,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "5", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -248,7 +1071,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "6", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -259,7 +1094,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "7", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -270,7 +1117,65 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -329,6 +1234,283 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
                 <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
                 DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "40", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "140", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "80", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "600", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtMost, 0, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "0", SetTo)?>;
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "4000", SetTo)?>;
             }
         }
     }
@@ -371,27 +1553,247 @@ function ClassicTriggerExec(){
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
@@ -401,7 +1803,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "5", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -412,7 +1826,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "6", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -423,7 +1849,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "7", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -434,7 +1872,65 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -493,6 +1989,283 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
                 <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
                 DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "40", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "140", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "80", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "600", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtMost, 0, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "0", SetTo)?>;
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "4000", SetTo)?>;
             }
         }
     }
@@ -535,27 +2308,247 @@ function ClassicTriggerExec(){
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
@@ -565,7 +2558,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "5", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -576,7 +2581,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "6", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -587,7 +2604,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "7", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -598,7 +2627,65 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -657,6 +2744,283 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
                 <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
                 DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "40", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "140", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "80", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "600", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtMost, 0, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "0", SetTo)?>;
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "4000", SetTo)?>;
             }
         }
     }
@@ -699,27 +3063,247 @@ function ClassicTriggerExec(){
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
@@ -729,7 +3313,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "5", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -740,7 +3336,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "6", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -751,7 +3359,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "7", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -762,7 +3382,65 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -821,6 +3499,283 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
                 <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
                 DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "40", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "140", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "80", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "600", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtMost, 0, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "0", SetTo)?>;
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "4000", SetTo)?>;
             }
         }
     }
@@ -863,27 +3818,247 @@ function ClassicTriggerExec(){
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(2, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUpgrade(2, CurrentPlayer, Subtract, "1")?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 2, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 3, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
                 <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
 
+            const PreserveFlag = EUDLightBool();
             if (
-                <?CurrentUpgrade(9, CurrentPlayer, AtLeast, "1")?>
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUpgrade(9, CurrentPlayer, Subtract, "1")?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 4, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 7, "5", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 11, "2", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 19, "1", Subtract)?>;
-                <?SetWeaponsDat("Weapon_Cooldown", 27, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetWeaponsDat("Weapon_Cooldown", 0, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 2, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 3, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 4, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 7, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 11, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 12, "3", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 13, "5", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 19, "2", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 27, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 28, "7", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 62, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 1, "1", Subtract)?>;
+                <?SetWeaponsDat("Weapon_Cooldown", 23, "1", Subtract)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "1")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "2")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "3")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Hit_Points", 0, "1536", Add)?>;
+                <?SetUnitsDat("Hit_Points", 1, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 2, "3072", Add)?>;
+                <?SetUnitsDat("Hit_Points", 3, "7680", Add)?>;
+                <?SetUnitsDat("Hit_Points", 5, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 7, "64000", Add)?>;
+                <?SetUnitsDat("Hit_Points", 9, "15360", Add)?>;
+                <?SetUnitsDat("Hit_Points", 12, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 16, "19200", Add)?>;
+                <?SetUnitsDat("Hit_Points", 20, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 23, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 25, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 28, "30720", Add)?>;
+                <?SetUnitsDat("Hit_Points", 64, "3072", Add)?>;
+                <?SetCUnitepd("SCVp[cp]", "hitPoints", "64000", Add)?>;
+                DoActions(PreserveFlag.Set());
             }
         }
         {
@@ -893,7 +4068,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "5", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "5", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -904,7 +4091,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "6", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "6", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -915,7 +4114,19 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "7", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "7", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -926,7 +4137,65 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
-                <?SetUnitsDat("Sight_Range", 229, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "8", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "8", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
+            ){
+                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -985,6 +4254,283 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Mineral_Cost", 16, "638", SetTo)?>;
                 <?SetUnitsDat("Mineral_Cost", 30, "638", SetTo)?>;
                 DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, CurrentPlayer, Exactly, "4")?>
+            ){
+                <?SetUnitsDat("Mineral_Cost", 0, "40", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 1, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 2, "140", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 3, "300", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 5, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 9, "80", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 12, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 16, "600", SetTo)?>;
+                <?SetUnitsDat("Mineral_Cost", 30, "600", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(49, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "0")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "0")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(47, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(47, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(2, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(2, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "1")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "1")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "2")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "2")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "3")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "3")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "4")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "4")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(9, AllPlayers, Exactly, "5")?>
+            ){
+                <?SetUpgrade(9, CurrentPlayer, SetTo, "5")?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtMost, 0, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "0", SetTo)?>;
+            }
+        }
+        {
+
+            if (
+                Command(CurrentPlayer, AtLeast, 1, 106)
+            ){
+                <?SetUnitsDat("Mineral_Cost", 106, "4000", SetTo)?>;
             }
         }
     }
