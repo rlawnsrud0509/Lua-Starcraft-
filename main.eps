@@ -293,6 +293,29 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
+                <?SetUnitsDat("Sight_Range", 0, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "4", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
                 <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
@@ -314,7 +337,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
@@ -337,7 +360,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
@@ -360,7 +383,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
@@ -383,7 +406,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
@@ -398,29 +421,6 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
-                DoActions(PreserveFlag.Set());
-            }
-        }
-        {
-
-            const PreserveFlag = EUDLightBool();
-            if (
-                PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
-            ){
-                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -1048,6 +1048,29 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
+                <?SetUnitsDat("Sight_Range", 0, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "4", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
                 <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
@@ -1069,7 +1092,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
@@ -1092,7 +1115,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
@@ -1115,7 +1138,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
@@ -1138,7 +1161,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
@@ -1153,29 +1176,6 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
-                DoActions(PreserveFlag.Set());
-            }
-        }
-        {
-
-            const PreserveFlag = EUDLightBool();
-            if (
-                PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
-            ){
-                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -1803,6 +1803,29 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
+                <?SetUnitsDat("Sight_Range", 0, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "4", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
                 <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
@@ -1824,7 +1847,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
@@ -1847,7 +1870,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
@@ -1870,7 +1893,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
@@ -1893,7 +1916,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
@@ -1908,29 +1931,6 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
-                DoActions(PreserveFlag.Set());
-            }
-        }
-        {
-
-            const PreserveFlag = EUDLightBool();
-            if (
-                PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
-            ){
-                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -2558,6 +2558,29 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
+                <?SetUnitsDat("Sight_Range", 0, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "4", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
                 <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
@@ -2579,7 +2602,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
@@ -2602,7 +2625,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
@@ -2625,7 +2648,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
@@ -2648,7 +2671,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
@@ -2663,29 +2686,6 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
-                DoActions(PreserveFlag.Set());
-            }
-        }
-        {
-
-            const PreserveFlag = EUDLightBool();
-            if (
-                PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
-            ){
-                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -3313,6 +3313,29 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
+                <?SetUnitsDat("Sight_Range", 0, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "4", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
                 <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
@@ -3334,7 +3357,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
@@ -3357,7 +3380,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
@@ -3380,7 +3403,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
@@ -3403,7 +3426,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
@@ -3418,29 +3441,6 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
-                DoActions(PreserveFlag.Set());
-            }
-        }
-        {
-
-            const PreserveFlag = EUDLightBool();
-            if (
-                PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
-            ){
-                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
@@ -4068,6 +4068,29 @@ function ClassicTriggerExec(){
                 PreserveFlag.IsCleared() && 
                 <?CurrentUpgrade(49, CurrentPlayer, Exactly, "0")?>
             ){
+                <?SetUnitsDat("Sight_Range", 0, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 1, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 2, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 3, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 5, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 7, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 9, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 12, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 16, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 23, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 25, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 28, "4", SetTo)?>;
+                <?SetUnitsDat("Sight_Range", 64, "4", SetTo)?>;
+                DoActions(PreserveFlag.Set());
+            }
+        }
+        {
+
+            const PreserveFlag = EUDLightBool();
+            if (
+                PreserveFlag.IsCleared() && 
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+            ){
                 <?SetUnitsDat("Sight_Range", 0, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "5", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 2, "5", SetTo)?>;
@@ -4089,7 +4112,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "1")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "6", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "6", SetTo)?>;
@@ -4112,7 +4135,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "2")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "7", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "7", SetTo)?>;
@@ -4135,7 +4158,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "3")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "8", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "8", SetTo)?>;
@@ -4158,7 +4181,7 @@ function ClassicTriggerExec(){
             const PreserveFlag = EUDLightBool();
             if (
                 PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "4")?>
+                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
             ){
                 <?SetUnitsDat("Sight_Range", 0, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 1, "9", SetTo)?>;
@@ -4173,29 +4196,6 @@ function ClassicTriggerExec(){
                 <?SetUnitsDat("Sight_Range", 25, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 28, "9", SetTo)?>;
                 <?SetUnitsDat("Sight_Range", 64, "9", SetTo)?>;
-                DoActions(PreserveFlag.Set());
-            }
-        }
-        {
-
-            const PreserveFlag = EUDLightBool();
-            if (
-                PreserveFlag.IsCleared() && 
-                <?CurrentUpgrade(49, CurrentPlayer, Exactly, "5")?>
-            ){
-                <?SetUnitsDat("Sight_Range", 0, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 1, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 2, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 3, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 5, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 7, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 9, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 12, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 16, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 23, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 25, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 28, "10", SetTo)?>;
-                <?SetUnitsDat("Sight_Range", 64, "10", SetTo)?>;
                 DoActions(PreserveFlag.Set());
             }
         }
